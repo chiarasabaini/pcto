@@ -22,8 +22,8 @@ $(window).resize(function(){
     $("#resize").text(count_resize++);
 })
 
-$("#content").scroll(function(){
-    $("#scroll").text(count_scroll++);
+$(window).scroll(function(){
+    $("#scroll").text(count_scrolls++);
 })
 
 $("#2021-03-05").mouseover(function(){
