@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
 $primary-text: #ffffff;
 
 $primary-bg: #000000;
@@ -56,6 +58,14 @@ hr {
     border-top: medium double $primary-text;
 }
 
+footer {
+    text-align: center;
+}
+
+code {
+    font-family: 'Cutive Mono', monospace;
+}
+
 // ids
 
 div#content {
@@ -77,13 +87,13 @@ div#content {
 
 .btn {
     background-color: black;
-    border: none;
     color: white;
-    padding: 10px 15px;
+    padding: 7px 7px;
     margin: 3px;
-    border: 2px solid white;
+    border: 2px solid round white;
+    border-radius: 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 13px;
 }
