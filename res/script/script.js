@@ -1,4 +1,5 @@
 var count_clicks = 0;
+var count_dblclicks = 0;
 var count_resize = 0;
 var count_scrolls = 0;
 var count_over = 0;
@@ -14,8 +15,12 @@ $('#content').css({'background-color' : '#ffffff', 'color' : '#000000'});
 $('#content').css({'background-color' : '#000000', 'color' : '#ffffff'});
  */
 
-$(".btn").click(function(){
+$("#purple-btn").click(function(){
     $("#click").text(count_clicks++);
+})
+
+$("#red-btn").dblclick(function(){
+    $("#dblclick").text(count_dblclicks++);
 })
 
 $(window).resize(function(){

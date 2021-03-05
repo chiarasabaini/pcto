@@ -64,10 +64,19 @@ div#content {
     justify-content: center;
 }
 
+#purple-btn {
+    background-color: #aa00ff !important;
+
+}
+
+#red-btn {
+    background-color: #ff0000 !important;
+}
+
 // classes
 
 .btn {
-    background-color: #aa00ff; /* Green */
+    background-color: black;
     border: none;
     color: white;
     padding: 10px 15px;
@@ -77,4 +86,4 @@ div#content {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-  }
+}

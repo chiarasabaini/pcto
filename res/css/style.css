@@ -66,9 +66,16 @@ div#content {
           justify-content: center;
 }
 
+#purple-btn {
+  background-color: #aa00ff !important;
+}
+
+#red-btn {
+  background-color: #ff0000 !important;
+}
+
 .btn {
-  background-color: #aa00ff;
-  /* Green */
+  background-color: black;
   border: none;
   color: white;
   padding: 10px 15px;
