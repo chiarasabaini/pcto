@@ -15,7 +15,6 @@ body {
     background-color: $primary-bg;
 
     color: $primary-text;
-    text-align: center;
     font-size: 16px;
 }   
 
@@ -50,9 +49,36 @@ header{
     }
 }
 
+ul {
+    //list-style-type: none;
+}
+
 hr {
     overflow: visible;
     padding: 0;
     border: none;
     border-top: medium double $primary-text;
 }
+
+// ids
+
+div#content {
+    padding: 25px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+// classes
+
+.btn {
+    background-color: #aa00ff; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 3px;
+    border: 2px solid white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
