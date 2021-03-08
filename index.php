@@ -52,8 +52,45 @@
                                 </code>
                             </li>
                             <li>
-                                <form>
-                                </form>
+                            <?php
+                                // define variables and set to empty values
+                                $a = $n = "";
+
+                                if (empty($_POST["a"])) {
+                                    $a = "";
+                                } else {
+                                    $a = test_input($_POST["a"]);
+                                }
+
+                                if (empty($_POST["n"])) {
+                                    $n = "";
+                                } else {
+                                    $n = test_input($_POST["n"]);
+                                }
+
+                                // use this function to avoid injections
+                                function test_input($data) {
+                                    $data = trim($data);
+                                    $data = stripslashes($data);
+                                    $data = htmlspecialchars($data);
+                                    return $data;
+                                }
+                                ?>
+                                <form action="index.php" method="POST">
+                                    <input type="text" name="a" placeholder="Insert text here">
+                                    <br>
+                                    <input type="radio" name="n" value="1">1
+                                    <input type="radio" name="n" value="2">2
+                                    <input type="radio" name="n" value="3">3
+                                    <br>
+                                    <button type="submit" class="btn">submit</button>
+		                        </form>
+                                <?php
+                                    echo "your input:<br>";
+                                    echo $a;
+                                    echo "<br>";
+                                    echo $n;
+                                ?>
                             </li>
                         </ul>
                     </ul>
