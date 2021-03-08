@@ -47,7 +47,7 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400s = 
                         <li>Installazione XAMPP e setup webserver</li>
                         <br>
                         <?php
-                            echo "<li>Introduzione al php</li>"
+                            echo "<li>Introduzione al php:</li>"
                         ?>
                         <ul>
                             <li>
@@ -106,7 +106,7 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400s = 
                                 date()
                                 <br>
                                 <?php
-                                    echo "Today is " . date("Y-m-d l H:i:s") . "<br>";
+                                    echo "Today is " . date("l Y-m-d H:i:s") . "<br>";
                                 ?>
                             </li>
                             <br>
@@ -131,13 +131,13 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400s = 
                         <ul>
                             <li>click, occurs when an element is clicked:<br>
                                 <code>$(".btn").click(function(){count_clicks++;})</code><br>
-                                <span id="click">0</span> clicks on the purple btn
+                                <span id="click">0</span> clicks on the purple button
                                 <button class="btn" id="purple-btn">click</button>
                             </li>
                             <br>
                             <li>double click, occurs when an element is double-clicked:<br>
                                 <code>$(".btn").dblclick(function(){count_dblclicks++;})</code><br>
-                                <span id="dblclick">0</span> double clicks on the red btn
+                                <span id="dblclick">0</span> double clicks on the red button
                                 <button class="btn" id="red-btn">click</button>
                             </li>
                             <br>
