@@ -12,9 +12,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--stylesheet-->
-        <link rel="stylesheet" type="text/css" href="/res/css/style.css">
+        <link rel="stylesheet" type="text/css" href="./res/css/style.css">
         <!--favicon-->
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
         <!--icons&fonts-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -26,17 +26,38 @@
         <header>
             <nav>
                 <div id="logo-wrapper">
-                    <img id="logo" src="/res/img/logo.png" alt="logo">
+                    <img id="logo" src="./res/img/logo.png" alt="logo">
                 </div>
                 <div id="container-head">
                     <h1>Hello, world!</h1>
-                    <button class="btn" id="purple-btn">click</button>
-                    <button class="btn" id="red-btn">click</button>
                 </div>
             </nav>
         </header>
 
         <div id="content">
+            <div class="daily">
+                    <h3>2021-03-08</h3>
+                    <ul id="2021-03-08">
+                        <li>Installazione XAMPP e setup webserver</li>
+                        <br>
+                        <?php
+                            echo "<li>Introduzione al php</li>"
+                        ?>
+                        <ul>
+                            <li>
+                                <code>
+                                    < ?php
+                                        echo "hello, world!";
+                                    ?>
+                                </code>
+                            </li>
+                            <li>
+                                <form>
+                                </form>
+                            </li>
+                        </ul>
+                    </ul>
+            </div>
             <div class="daily">
                 <h3>2021-03-05</h3>
                 <ul id="2021-03-05">
@@ -45,11 +66,13 @@
                             <li>click, occurs when an element is clicked:<br>
                                 <code>$(".btn").click(function(){count_clicks++;})</code><br>
                                 <span id="click">0</span> clicks on the purple btn
+                                <button class="btn" id="purple-btn">click</button>
                             </li>
                             <br>
                             <li>double click, occurs when an element is double-clicked:<br>
                                 <code>$(".btn").dblclick(function(){count_dblclicks++;})</code><br>
                                 <span id="dblclick">0</span> double clicks on the red btn
+                                <button class="btn" id="red-btn">click</button>
                             </li>
                             <br>
                             <li>
