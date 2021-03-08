@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!--cookie-->
+<?php
+$cookie_name = "user";
+$cookie_value = "username";
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400s = 1 day
+?>
 <html>
     <!--
     @author: Sabaini Chiara
@@ -45,36 +51,39 @@
                         ?>
                         <ul>
                             <li>
+                                <?php
+                                    echo "hello, world!<br>";
+                                ?>
                                 <code>
-                                    < ?php
-                                        echo "hello, world!";
-                                    ?>
+                                    < ?php echo "hello, world!"; ?>
                                 </code>
                             </li>
+                            <br>
                             <li>
-                            <?php
-                                // define variables and set to empty values
-                                $a = $n = "";
+                                form<br>
+                                <?php
+                                    // define variables and set to empty values
+                                    $a = $n = "";
 
-                                if (empty($_POST["a"])) {
-                                    $a = "";
-                                } else {
-                                    $a = test_input($_POST["a"]);
-                                }
+                                    if (empty($_POST["a"])) {
+                                        $a = "";
+                                    } else {
+                                        $a = test_input($_POST["a"]);
+                                    }
 
-                                if (empty($_POST["n"])) {
-                                    $n = "";
-                                } else {
-                                    $n = test_input($_POST["n"]);
-                                }
+                                    if (empty($_POST["n"])) {
+                                        $n = "";
+                                    } else {
+                                        $n = test_input($_POST["n"]);
+                                    }
 
-                                // use this function to avoid injections
-                                function test_input($data) {
-                                    $data = trim($data);
-                                    $data = stripslashes($data);
-                                    $data = htmlspecialchars($data);
-                                    return $data;
-                                }
+                                    // use this function to avoid injections
+                                    function test_input($data) {
+                                        $data = trim($data);
+                                        $data = stripslashes($data);
+                                        $data = htmlspecialchars($data);
+                                        return $data;
+                                    }
                                 ?>
                                 <form action="index.php" method="POST">
                                     <input type="text" name="a" placeholder="Insert text here">
@@ -84,12 +93,32 @@
                                     <input type="radio" name="n" value="3">3
                                     <br>
                                     <button type="submit" class="btn">submit</button>
-		                        </form>
+                                </form>
                                 <?php
                                     echo "your input:<br>";
                                     echo $a;
                                     echo "<br>";
                                     echo $n;
+                                ?>
+                            </li>
+                            <br>
+                            <li>
+                                date()
+                                <br>
+                                <?php
+                                    echo "Today is " . date("Y-m-d l H:i:s") . "<br>";
+                                ?>
+                            </li>
+                            <br>
+                            <li>
+                                cookies<br>
+                                <?php
+                                    if(!isset($_COOKIE[$cookie_name])) {
+                                        echo "Cookie named '" . $cookie_name . "' is not set!";
+                                    } else {
+                                        echo "Cookie '" . $cookie_name . "' is set!<br>";
+                                        echo "Value is: " . $_COOKIE[$cookie_name];
+                                    }
                                 ?>
                             </li>
                         </ul>
@@ -165,7 +194,7 @@
         <footer>
             <hr>
             <blockquote>"et vivere, reservate"</blockquote>
-            Website made with ♡ by <a href="https://github.com/chiarasabaini" target="_blank">Sabaini Chiara</a>
+            Website made with ♡ by <a href="https://github.com/chiarasabaini" target="_blank">Sabaini Chiara</a> | © 2021-<?php echo date("Y");?>
         </footer>
 
         <!--script, included at the end 'cause it uses DOM's elements-->
