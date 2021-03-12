@@ -41,6 +41,33 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400s = 
         </header>
 
         <div id="content">
+        <div class="daily">
+                <h3>2021-03-12</h3>
+                <ul id="2021-03-12">
+                    <li>Analisi dei possibili suggerimenti da mostrare all'utente, in collaborazione con un membro del team:
+                        <ul>
+                            <li>Cosa mostrare:
+                                <ul>
+                                    <li>Chatbot(AI) per assistenza interattiva</li>
+                                    <li>Notifica (on mobile) quando si "abbandona" il carrello</li>
+                                    <li>Banners:
+                                        <ul>
+                                            <li>
+                                                Prodotti simili a quelli inseriti nel carrello/acquistati di recenti
+                                            </li>
+                                            <li>
+                                                Prodotti spesso acquistati insieme (proposte bundle)
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
             <div class="daily">
                     <h3>2021-03-08</h3>
                     <ul id="2021-03-08">
