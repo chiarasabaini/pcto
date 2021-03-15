@@ -46,3 +46,9 @@ $("#2021-03-05").mouseout(function(){
 $(".daily").mouseleave(function(){
     $("#m-leave").text(count_leave++);
 })
+
+$("#black-btn").click(function(){
+    $.get("get_data.php", function(name, status){
+      alert("Name: " + name + "\nStatus: " + status);
+    });
+  });

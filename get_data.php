@@ -30,5 +30,14 @@
     </head>
     <body>
         <div id="content">
+        <script>
+            $.post("get_data.php",
+                {
+                    name: "Donald Duck",
+                    city: "Duckburg"
+                }
+            });
+        </script>
+        </div>
     </body>
 </html>

@@ -44,6 +44,7 @@
             <div class="daily">
                 <h3>2021-03-15</h3>
                 <ul id="2021-03-15">
+                    <button class="btn" id="black-btn">click</button>
                     <li>PHP
                         <ul>
                             <li>
@@ -51,6 +52,23 @@
                                 <?php
                                     echo file_get_contents("test.txt");
                                 ?>
+                            </li>
+                            <li>
+                                <code>file_put_contents(filename, data, mode, context)</code><br>
+                                <?php
+                                    $a = file_get_contents("test.txt");
+                                    file_put_contents("test.txt", $a);
+                                ?>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>JS - AJAX
+                        <ul>
+                            <li>Requests data from the server with an HTTP GET request: 
+                                <code>$.get(URL,callback);</code><br>
+                            </li>
+                            <li>Requests data from the server using an HTTP POST request: 
+                                <code>$.post(URL,data,callback);</code><br>
                             </li>
                         </ul>
                     </li>
