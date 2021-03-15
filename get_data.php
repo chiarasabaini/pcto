@@ -36,7 +36,7 @@
                     name: "Donald Duck",
                     city: "Duckburg"
                 }
-            });
+            );
         </script>
         </div>
     </body>
