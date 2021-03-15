@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--cookie-->
 <?php
-$cookie_name = "user";
-$cookie_value = "username";
-setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400s = 1 day
+    $cookie_name = "user";
+    $cookie_value = "username";
+    setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400s = 1 day
 ?>
 <html>
     <!--
@@ -41,7 +41,22 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400s = 
         </header>
 
         <div id="content">
-        <div class="daily">
+            <div class="daily">
+                <h3>2021-03-15</h3>
+                <ul id="2021-03-15">
+                    <li>PHP
+                        <ul>
+                            <li>
+                                <code>file_get_contents(path, include_path, context, start, max_length)</code><br>
+                                <?php
+                                    echo file_get_contents("test.txt");
+                                ?>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="daily">
                 <h3>2021-03-12</h3>
                 <ul id="2021-03-12">
                     <li>Analisi dei possibili suggerimenti da mostrare all'utente, in collaborazione con un membro del team:
@@ -61,11 +76,9 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400s = 
                                         </ul>
                                     </li>
                                 </ul>
-                            </li>
-                            
+                            </li>                            
                         </ul>
                     </li>
-                    
                 </ul>
             </div>
             <div class="daily">
