@@ -42,9 +42,26 @@
 
         <div id="content">
             <div class="daily">
+                <h3>2021-03-19</h3>
+                <ul id="2021-03-19">
+                    <li>
+                        <input id="name" type="text" placeholder="Insert name here"/>
+                        <input id="city" type="text" placeholder="Insert city"/>
+                        <button onclick="get_data('btn1');" class="btn black-btn" id="btn1">click</button>
+                        <div id="test1"></div>
+                    </li>
+                    <li>
+                        <button onclick="get_data('btn2');" class="btn black-btn" id="btn2">click</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="daily">
                 <h3>2021-03-15</h3>
                 <ul id="2021-03-15">
-                    <button class="btn" id="black-btn">click</button>
+                    <input id="val1" type="text"/>
+                    <input id="val2" type="text"/>
+                    <button onclick="get_data('btn0');" class="btn black-btn">click</button><br>
+                    <div id="test"></div>
                     <li>PHP
                         <ul>
                             <li>
@@ -69,6 +86,9 @@
                             </li>
                             <li>Requests data from the server using an HTTP POST request: 
                                 <code>$.post(URL,data,callback);</code><br>
+                            </li>
+                            <li>Calls a function or evaluates an expression after a specified number of milliseconds: 
+                                <code>setTimeout(function, milliseconds, param1, param2, ...)</code><br>
                             </li>
                         </ul>
                     </li>
@@ -174,7 +194,7 @@
                                     if(!isset($_COOKIE[$cookie_name])) {
                                         echo "Cookie named '" . $cookie_name . "' is not set!";
                                     } else {
-                                        echo "Cookie '" . $cookie_name . "' is set!<br>";
+                                        echo "Cookie '$cookie_name' is set!<br>";
                                         echo "Value is: " . $_COOKIE[$cookie_name];
                                     }
                                 ?>
@@ -190,13 +210,13 @@
                             <li>click, occurs when an element is clicked:<br>
                                 <code>$(".btn").click(function(){count_clicks++;})</code><br>
                                 <span id="click">0</span> clicks on the purple button
-                                <button class="btn" id="purple-btn">click</button>
+                                <button class="btn purple-btn">click</button>
                             </li>
                             <br>
                             <li>double click, occurs when an element is double-clicked:<br>
                                 <code>$(".btn").dblclick(function(){count_dblclicks++;})</code><br>
                                 <span id="dblclick">0</span> double clicks on the red button
-                                <button class="btn" id="red-btn">click</button>
+                                <button class="btn red-btn">click</button>
                             </li>
                             <br>
                             <li>

@@ -15,11 +15,11 @@ $('#content').css({'background-color' : '#ffffff', 'color' : '#000000'});
 $('#content').css({'background-color' : '#000000', 'color' : '#ffffff'});
  */
 
-$("#purple-btn").click(function(){
+$(".urple-btn").click(function(){
     $("#click").text(count_clicks++);
 })
 
-$("#red-btn").dblclick(function(){
+$(".red-btn").dblclick(function(){
     $("#dblclick").text(count_dblclicks++);
 })
 
@@ -47,8 +47,29 @@ $(".daily").mouseleave(function(){
     $("#m-leave").text(count_leave++);
 })
 
-$("#black-btn").click(function(){
-    $.get("get_data.php", function(name, status){
-      alert("Name: " + name + "\nStatus: " + status);
-    });
-  });
+function get_data(btn) {
+    $.post("get_data.php",
+        {
+            val1: $("#val1").val(),
+            val2: $("#val2").val(),
+            name: $("#name").val(),
+            city: $("#city").val(),
+            btn: btn
+        },
+        function(data, status){
+            switch (btn){
+                case "btn0":
+                    $('#test').html(data);
+                    break;
+                case "btn1":
+                    $('#test1').html(data);
+                    break;
+                case "btn2":
+                    $('#btn2').css(data);
+                    break;
+                default:
+                    break;
+            }
+        }
+        );
+};

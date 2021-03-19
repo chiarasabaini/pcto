@@ -77,16 +77,16 @@ div#content {
           justify-content: center;
 }
 
-#purple-btn {
-  background-color: #aa00ff !important;
+.purple-btn {
+  background-color: #aa00ff;
 }
 
-#red-btn {
-  background-color: #ff0000 !important;
+.red-btn {
+  background-color: #ff0000;
 }
 
-#black-btn {
-  background-color: #000000 !important;
+.black-btn {
+  background-color: #000000;
 }
 
 .btn {
