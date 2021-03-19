@@ -15,7 +15,7 @@
             break;
         
         case "btn2":
-            echo '{"background-color" : "#69EEA5 !important", "color" : "#ffffff"}';
+            echo '"background-color" , "#69EEA5 !important"';
             break;
 
         default:
