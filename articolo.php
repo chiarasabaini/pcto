@@ -32,7 +32,7 @@
         </div>
 
         <div class="row" style="height: 30px;">
-            <div class="col-3 alert-success">
+            <div class="col-3 alert-success alert">
             </div>
 
             <div class="col-3 alert-success">
@@ -58,7 +58,8 @@
                         <h5 class="card-title">Card subtitle</h5>
                         <p class="card-text">
                             Brief product description.<br>
-                            Sit aliqua consequat fugiat id ipsum. Velit velit incididunt excepteur tempor enim incididunt sit. Nostrud nostrud mollit laborum magna aliqua pariatur do amet.
+                            Sit aliqua consequat fugiat id ipsum. Velit velit incididunt excepteur tempor enim incididunt sit.<br>
+                            Nostrud nostrud mollit laborum magna aliqua pariatur do amet.
                         </p>
 
                         <div class="alert alert-success">
