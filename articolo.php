@@ -35,7 +35,7 @@
             <div class="col-3 alert-success alert">
             </div>
 
-            <div class="col-3 alert-success">
+            <div class="col-3 alert-success ">
             </div>
 
             <div class="col-3 alert-success">
@@ -54,12 +54,11 @@
                     <img src="./res/img/product.jpg" class="card-img-top" alt="product image">
 
                     <div class="card-body">
-                        <h3 class="card-title">Card title</h3>
-                        <h5 class="card-title">Card subtitle</h5>
+                        <h3 class="card-title">Product title</h3>
+                        <h5 class="card-title">Product subtitle</h5>
                         <p class="card-text">
                             Brief product description.<br>
-                            Sit aliqua consequat fugiat id ipsum. Velit velit incididunt excepteur tempor enim incididunt sit.<br>
-                            Nostrud nostrud mollit laborum magna aliqua pariatur do amet.
+                            Sit aliqua consequat fugiat id ipsum. Velit velit incididunt excepteur tempor enim incididunt sit. Nostrud nostrud mollit laborum magna aliqua pariatur do amet.
                         </p>
 
                         <div class="alert alert-success">
@@ -74,11 +73,22 @@
                             <option value="4">S</option>
                             <option value="5">XS</option>
                         </select>
-
-                        <a href="#" class="btn btn-primary">Buy now</a>
+                        <div class="row">
+                            <div class="col-4">
+                            </div>
+                            <div class="col-4">
+                                <a href="#" class="btn btn-primary">Buy now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </body>
+    
+    <footer>
+            <hr>
+            <blockquote>"et vivere, reservate"</blockquote>
+            Website made with ♡ by <a href="https://github.com/chiarasabaini" target="_blank">Sabaini Chiara</a> | © 2021-<?php echo date("Y");?>
+        </footer>
 </html>
