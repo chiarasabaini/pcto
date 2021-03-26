@@ -28,14 +28,15 @@
     <body>
         <div class="row" style="height: 30px;">
             <div class="col-12 alert-success">
+                <p id="sizeBanner"></p>
             </div>
         </div>
-
         <div class="row" style="height: 30px;">
-            <div class="col-3 alert-success alert">
+            <div id="imgBanner" class="col-3 alert-success">
+                <p id="imgText"></p>
             </div>
 
-            <div class="col-3 alert-success ">
+            <div class="col-3 alert-success">
             </div>
 
             <div class="col-3 alert-success">
@@ -51,7 +52,7 @@
 
             <div class="col-4">
                 <div class="card">
-                    <img src="./res/img/product.jpg" class="card-img-top" alt="product image">
+                    <img src="./res/img/product.jpg" id="productImg" class="card-img-top" alt="product image">
 
                     <div class="card-body">
                         <h3 class="card-title">Product title</h3>
@@ -64,14 +65,13 @@
                         <div class="alert alert-success">
                             €121.00
                         </div>
-
-                        <select class="form-select">
+                        <select id="size" name="sizes" class="form-select" onChange="this.form.submit()">
                             <option selected>Select size here</option>
-                            <option value="1">XL</option>
-                            <option value="2">L</option>
-                            <option value="3">M</option>
-                            <option value="4">S</option>
-                            <option value="5">XS</option>
+                            <option>XL</option>
+                            <option>L</option>
+                            <option>M</option>
+                            <option>S</option>
+                            <option>XS</option>
                         </select>
                         <div class="row">
                             <div class="col-4">
@@ -91,4 +91,7 @@
             <blockquote>"et vivere, reservate"</blockquote>
             Website made with ♡ by <a href="https://github.com/chiarasabaini" target="_blank">Sabaini Chiara</a> | © 2021-<?php echo date("Y");?>
         </footer>
+
+        <!--script, included at the end 'cause it uses DOM's elements-->
+        <script src="./res/script/script.js"></script>
 </html>

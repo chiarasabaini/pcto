@@ -54,7 +54,8 @@ function get_data(btn) {
             val2: $("#val2").val(),
             name: $("#name").val(),
             city: $("#city").val(),
-            btn: btn
+            btn: btn,
+            size: $("#size").val()
         },
         function(data, status){
             switch (btn){
@@ -73,3 +74,18 @@ function get_data(btn) {
         }
         );
 };
+
+$("#productImg").mouseover(function(){
+    $.post("product_values.php",
+    {
+        imgText: $("#imgText").text()
+    },
+    function(data, status){
+        $('#imgText').html(data);
+    });
+})
+
+function selectSize(){
+    var selectedSize = $("#size option:selected").value();
+    $("#sizeBanner").html(selectedSize);
+}
