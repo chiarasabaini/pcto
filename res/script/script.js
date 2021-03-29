@@ -89,7 +89,7 @@ $(document).ready(function(){
    $('#size').change(function(){
         $.post("product_values.php",
         {
-            size: $('#size').value()
+            size: $('#size option:selected').text()
         },
         function(data, status){
             $('#sizeBanner').html(data);
