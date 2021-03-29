@@ -83,9 +83,16 @@ $("#productImg").mouseover(function(){
     function(data, status){
         $('#imgText').html(data);
     });
-})
+});
 
-function selectSize(){
-    var selectedSize = $("#size option:selected").value();
-    $("#sizeBanner").html(selectedSize);
-}
+$(document).ready(function(){
+   $('#size').change(function(){
+        $.post("product_values.php",
+        {
+            size: $('#size').value()
+        },
+        function(data, status){
+            $('#sizeBanner').html(data);
+        });
+   });
+});

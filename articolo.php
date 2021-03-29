@@ -36,7 +36,7 @@
                 <p id="imgText"></p>
             </div>
 
-            <div class="col-3 alert-success">
+            <div class="col-3 alert-success center">
             </div>
 
             <div class="col-3 alert-success">
@@ -65,7 +65,7 @@
                         <div class="alert alert-success">
                             €121.00
                         </div>
-                        <select id="size" name="sizes" class="form-select" onChange="this.form.submit()">
+                        <select id="size" name="sizes" class="form-select" onChange=selectSize()>
                             <option selected>Select size here</option>
                             <option>XL</option>
                             <option>L</option>
