@@ -40,6 +40,7 @@
             </div>
 
             <div class="col-3 alert-success">
+                <canva id="canvas" width="250" height="300" style="border:1px solid #d3d3d3;"></canva>
             </div>
 
             <div class="col-3 alert-success">
@@ -77,7 +78,7 @@
                             <div class="col-4">
                             </div>
                             <div class="col-4">
-                                <a href="#" class="btn btn-primary">Buy now</a>
+                                <button class="btn btn-primary" onclick="drawInCanvas()">Buy now</button>
                             </div>
                         </div>
                     </div>

@@ -96,3 +96,10 @@ $(document).ready(function(){
         });
    });
 });
+
+function drawInCanvas(){
+    var c = $("#canvas");
+    var ctx = c.getContext("2d");
+    var img = $("#productImg");
+    ctx.drawImage(img, 10, 10);
+};
