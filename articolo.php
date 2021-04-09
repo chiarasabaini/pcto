@@ -26,12 +26,12 @@
     </head>
 
     <body>
-        <div  class="row">
+        <div class="row">
             <div class="col-12 alert-success">
                 <p id="sizeBanner"></p>
             </div>
         </div>
-        <div class="row" style="height: 30px;">
+        <div class="row">
             <div id="imgBanner" class="col-3 alert-success">
                 <p id="imgText"></p>
             </div>
@@ -53,7 +53,7 @@
 
             <div class="col-4">
                 <div class="card">
-                    <img src="./res/img/product.jpg" id="productImg" class="card-img-top" alt="product image" height="250">
+                    <img src="./res/img/product.jpg" id="productImg" class="card-img-top" alt="product image">
 
                     <div class="card-body">
                         <h3 class="card-title">Product title</h3>
