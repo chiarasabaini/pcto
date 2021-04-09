@@ -97,9 +97,9 @@ $(document).ready(function(){
    });
 });
 
-function drawInCanvas(){
-    var c = $("#canvas");
+$("#buyBtn").click(function(){
+    var c = document.getElementById("canvas");
     var ctx = c.getContext("2d");
-    var img = $("#productImg");
-    ctx.drawImage(img, 10, 10);
-};
+    var img = document.getElementById("productImg");
+    ctx.drawImage(img, 0, 0);
+});

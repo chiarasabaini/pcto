@@ -26,7 +26,7 @@
     </head>
 
     <body>
-        <div class="row" style="height: 30px;">
+        <div  class="row">
             <div class="col-12 alert-success">
                 <p id="sizeBanner"></p>
             </div>
@@ -40,7 +40,7 @@
             </div>
 
             <div class="col-3 alert-success">
-                <canva id="canvas" width="250" height="300" style="border:1px solid #d3d3d3;"></canva>
+                <canvas id="canvas" width="50" height="50" style="border:1px solid #d3d3d3;"></canvas>
             </div>
 
             <div class="col-3 alert-success">
@@ -53,7 +53,7 @@
 
             <div class="col-4">
                 <div class="card">
-                    <img src="./res/img/product.jpg" id="productImg" class="card-img-top" alt="product image">
+                    <img src="./res/img/product.jpg" id="productImg" class="card-img-top" alt="product image" height="250">
 
                     <div class="card-body">
                         <h3 class="card-title">Product title</h3>
@@ -78,7 +78,7 @@
                             <div class="col-4">
                             </div>
                             <div class="col-4">
-                                <button class="btn btn-primary" onclick="drawInCanvas()">Buy now</button>
+                                <button id="buyBtn" class="btn btn-primary">Buy now</button>
                             </div>
                         </div>
                     </div>
