@@ -99,7 +99,13 @@ $(document).ready(function(){
 
 $("#buyBtn").click(function(){
     var c = document.getElementById("canvas");
+    c.style = "height: 150px; width: 150px;";
+
     var ctx = c.getContext("2d");
     var img = document.getElementById("productImg");
-    ctx.drawImage(img, 0, 0);
+    ctx.drawImage(img, 0, 0, 150, 150);
+
+    var btn = $("#btn-canvas");
+    btn.text("Lorem ipsum");
+    btn.style = "display: show;";
 });

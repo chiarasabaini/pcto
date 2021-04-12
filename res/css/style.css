@@ -77,6 +77,16 @@ div#content {
           justify-content: center;
 }
 
+#canvas {
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  z-index: -1;
+}
+
 .purple-btn {
   background-color: #aa00ff;
 }
@@ -100,5 +110,17 @@ div#content {
   text-decoration: none;
   display: inline-block;
   font-size: 13px;
+}
+
+.btn-foreground {
+  float: left;
+  display: hidden;
+}
+
+.btn-container {
+  position: relative;
+  top: 25%;
+  left: 25%;
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

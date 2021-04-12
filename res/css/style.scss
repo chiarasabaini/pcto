@@ -9,6 +9,7 @@ $shadow-light: 0px 0px 24px rgba(0, 0, 0, 0.3);
 
 * {
     box-sizing: border-box;
+    // border: 1px solid red;
 }
 
 body {
@@ -76,6 +77,16 @@ div#content {
     justify-content: center;
 }
 
+#canvas {
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    z-index: -1;
+}
+
 // classes
 
 .purple-btn {
@@ -103,3 +114,15 @@ div#content {
     display: inline-block;
     font-size: 13px;
 }
+
+.btn-foreground{
+   float: left;
+   display: hidden;
+}
+
+.btn-container{
+    position: relative;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+ }

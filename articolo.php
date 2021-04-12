@@ -40,7 +40,10 @@
             </div>
 
             <div class="col-3 alert-success">
-                <canvas id="canvas" width="50" height="50" style="border:1px solid #d3d3d3;"></canvas>
+                <canvas id="canvas"></canvas>
+                <div class="btn-container">
+                    <button id="btn-canvas" class="btn btn-alert btn-foreground"></button>
+                </div>
             </div>
 
             <div class="col-3 alert-success">
