@@ -9,7 +9,7 @@ $shadow-light: 0px 0px 24px rgba(0, 0, 0, 0.3);
 
 * {
     box-sizing: border-box;
-    // border: 1px solid red;
+    border: 1px solid red;
 }
 
 body {
@@ -77,14 +77,15 @@ div#content {
     justify-content: center;
 }
 
+div#canvas-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 #canvas {
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    display: block;
-    z-index: -1;
+    display: hidden;
+    z-index: 0;
 }
 
 // classes
@@ -116,13 +117,9 @@ div#content {
 }
 
 .btn-foreground{
-   float: left;
    display: hidden;
+   top: 10%;
+   left: 33%;
+   position: absolute;
+   z-index: 2;
 }
-
-.btn-container{
-    position: relative;
-    top: 25%;
-    left: 25%;
-    width: 50%;
- }

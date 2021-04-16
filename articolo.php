@@ -5,12 +5,12 @@
     @version: 01.01
     @date: 2021-03-22
     -->
-    <head>
+   <head>
         <title>
             HOME
         </title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta na me="viewport" content="width=device-width, initial-scale=1.0">
         <!--stylesheet-->
         <link rel="stylesheet" type="text/css" href="./res/css/style.css">
         <!--bootstrap-->
@@ -32,21 +32,14 @@
             </div>
         </div>
         <div class="row">
-            <div id="imgBanner" class="col-3 alert-success">
+            <div id="imgBanner" class="col-4 alert-success">
                 <p id="imgText"></p>
             </div>
-
-            <div class="col-3 alert-success center">
+            <div id="canvas-container" class="col-4 alert-success">
+                <canvas id="canvas" width="150" height="150"></canvas>
+                <button id="btn-canvas" class="btn-foreground btn red-btn"></button>
             </div>
-
-            <div class="col-3 alert-success">
-                <canvas id="canvas"></canvas>
-                <div class="btn-container">
-                    <button id="btn-canvas" class="btn btn-alert btn-foreground"></button>
-                </div>
-            </div>
-
-            <div class="col-3 alert-success">
+            <div class="col-4 alert-success">
             </div>
         </div>
 

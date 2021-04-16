@@ -3,6 +3,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -77,14 +78,19 @@ div#content {
           justify-content: center;
 }
 
+div#canvas-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #canvas {
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  display: block;
-  z-index: -1;
+  display: hidden;
+  z-index: 0;
 }
 
 .purple-btn {
@@ -113,14 +119,10 @@ div#content {
 }
 
 .btn-foreground {
-  float: left;
   display: hidden;
-}
-
-.btn-container {
-  position: relative;
-  top: 25%;
-  left: 25%;
-  width: 50%;
+  top: 10%;
+  left: 33%;
+  position: absolute;
+  z-index: 2;
 }
 /*# sourceMappingURL=style.css.map */

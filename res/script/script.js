@@ -99,7 +99,7 @@ $(document).ready(function(){
 
 $("#buyBtn").click(function(){
     var c = document.getElementById("canvas");
-    c.style = "height: 150px; width: 150px;";
+    c.style = "display: show;";
 
     var ctx = c.getContext("2d");
     var img = document.getElementById("productImg");
