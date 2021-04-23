@@ -94,6 +94,7 @@ $(document).ready(function(){
         function(data, status){
             $('#sizeBanner').html(data);
         });
+
    });
 });
 
@@ -109,3 +110,49 @@ $("#buyBtn").click(function(){
     btn.text("Lorem ipsum");
     btn.style = "display: show;";
 });
+
+var dati = {};
+dati.version = 1;
+
+dati.open = function() {
+    var request = window.indexedDB.open("dati", this.version);
+    request.onupgradeneeded = function(event) {
+        var db = event.target.result;
+        if(db.objectStoreNames.contains("size")) {
+            db.deleteObjectStore("size");
+        }
+        var store = db.createObjectStore("size", {keyPath: "id"});
+    }
+    request.onsuccess = function(event) {
+        dati.db = event.target.result;
+    }
+    request.onerror = function(event) {
+        console.log("Si è verificato un errore nell'apertura del DB");
+    }
+};
+
+dati.addSize = function(size) {
+    var db = dati.db;
+    var trans = db.transaction(["size"], "readwrite");
+    var store = trans.objectStore("size");
+    var request = store.add({
+        "id": size.id,
+        "size": size.size
+    });
+    request.onsuccess = function(e) {
+        console.log("Taglia inserito correttamente!");
+    }
+    request.onerror = function(e) {
+        console.log("Si è verificato un errore nell'inserimento di una taglia!");
+    }
+};
+
+
+
+function openDB(){
+    dati.open();
+}
+
+function selectSize(){
+    dati.addSize($('#size option:selected').text());
+}

@@ -90,5 +90,5 @@
         </footer>
 
         <!--script, included at the end 'cause it uses DOM's elements-->
-        <script src="./res/script/script.js"></script>
+        <script src="./res/script/script.js">openDB()</script>
 </html>
