@@ -42,6 +42,62 @@
 
         <div id="content">
             <div class="daily">
+                <h3>2021-04-26</h3>
+                <ul id="2021-04-19">
+                    <li>
+                        Research on how to keep my website safe
+                    </li>
+                </ul>
+            </div>
+            <div class="daily">
+                <h3>2021-04-19</h3>
+                <ul id="2021-04-19">
+                    <li>
+                        Introduction to IndexedDB
+                    </li>
+                </ul>
+            </div>
+            <div class="daily">
+                <h3>2021-04-12 and 2021-04-16</h3>
+                <ul id="2021-04-12">
+                    <li>
+                        Used ajax on <a href="./articolo.php">this</a> page.
+                    </li>
+                </ul>
+            </div>
+            <div class="daily">
+                <h3>2021-04-09</h3>
+                <ul id="2021-03-26">
+                    <li>
+                        Adjustments to <a href="./articolo.php">this</a> page.
+                    </li>
+                </ul>
+            </div>
+            <div class="daily">
+                <h3>2021-03-29</h3>
+                <ul id="2021-03-29">
+                    <li>
+                        Created banners with events when specific events are verified in the page.
+                    </li>
+                </ul>
+            </div>
+            <div class="daily">
+                <h3>2021-03-26</h3>
+                <ul id="2021-03-26">
+                    <li>
+                        Finished setting up the style of <a href="./articolo.php">this</a> page.
+                    </li>
+                </ul>
+            </div>
+            <div class="daily">
+                <h3>2021-03-22</h3>
+                <ul id="2021-03-22">
+                    <li>
+                        Started working on <a href="./articolo.php">this</a> page.
+                    </li>
+                </ul>
+            </div>
+            <div class="daily">
                 <h3>2021-03-19</h3>
                 <ul id="2021-03-19">
                     <li>

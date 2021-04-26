@@ -93,8 +93,8 @@ $(document).ready(function(){
         },
         function(data, status){
             $('#sizeBanner').html(data);
+            dati.addSize(data);
         });
-
    });
 });
 
