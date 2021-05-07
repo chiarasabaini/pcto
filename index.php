@@ -317,7 +317,7 @@
                 </ul>
             </div>
             <div class="daily">
-                <h3>2021-03-03</h3>
+                <h3>2021-03-01</h3>
                 <ul>
                     <li>Presentazione generale del progetto</li>
                     <li>Introduzione delle basi di javascript e jquery</li>
