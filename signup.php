@@ -23,16 +23,16 @@
 <body>
     <div id="content">
         <form action="registration.php" method="POST">
-            Email:   <input type="text" name="email" placeholder="Insert email here" required>
+            Email: <input type="text" name="email" placeholder="Insert email here" required>
             <br>
             <br>
-            Name:   <input type="text" name="name" placeholder="Insert name here" required>
+            Name: <input type="text" name="name" placeholder="Insert name here" required>
             <br>
             <br>
-            Surname:    <input type="text" name="surname" placeholder="Insert surname here" required>
+            Surname: <input type="text" name="surname" placeholder="Insert surname here" required>
             <br>
             <br>
-            Password:   <input type="text" name="password" placeholder="Insert password here" required>
+            Password: <input type=""text"" name="password" placeholder="Insert password here" required>
             <br>
             <br>
             <input type="radio" name="privacy" required>privacy</input>
